@@ -3,10 +3,10 @@
     {
       "id": 0,
       "name": "John Doe",
-      "email": "3a0Wl@example.com",
-      "contact": "123456",
+      "email": "john@example.com",
+      "contact": "123456789",
       "address":"xyz",
-      "city":"abc"
+      "city":"pune"
       
     }
   ]
