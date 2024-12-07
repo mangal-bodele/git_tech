@@ -8,7 +8,7 @@ function AddUser() {
     const naviGate = useNavigate()
 
     function saveData(data){
-        axios.post('http://localhost:3000/users',data)
+        axios.post('http://localhost:5000/users',data)
         .then(res=>console.log(res))
         alert("data added successfully")
         naviGate('/show')
