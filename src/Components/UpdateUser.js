@@ -16,12 +16,12 @@ function UpdateUser() {
 
     function saveData(data){
         const res = axios.put(`http://localhost:5000/users/${userId}`,data)
-        setValue("Id",res.data.id),
-        setValue("name",res.data.name),
-        setValue("email",res.data.email),
-        setValue("contact",res.data.contact),
-        setValue("address",res.data.address),
-        setValue("city",res.data.city),
+        setValue("Id",res.data.id)
+        setValue("name",res.data.name)
+        setValue("email",res.data.email)
+        setValue("contact",res.data.contact)
+        setValue("address",res.data.address)
+        setValue("city",res.data.city)
     }
 
     useEffect(() => {    
