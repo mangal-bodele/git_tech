@@ -30,24 +30,14 @@ function ShowUsers() {
             </thead>
             <tbody>
                 <tr>
-                    {
-                        user.map{
-                            return{
-                                <tr>
-                                    <td>{user.id}</td>
-                                    <td>{user.name}</td>
-                                    <td>{user.email}</td>
-                                    <td>{user.contact}</td>
-                                    <td>{user.address}</td>
-                                    <td>{user.city}</td>
-                                    <td>
-                                        <button><NavLink</button>
-                                    </td>
-                                </tr>
-                            }
-                        }
-                    }
-
+                    <td>{users.id}</td>
+                    <td>{users.name}</td>
+                    <td>{users.email}</td>
+                    <td>{users.contact}</td>
+                    <td>{users.address}</td>
+                    <td>{users.city}</td>
+                    <td><button onClick={() => navigate(`/update/${users.id}`)}>Update</button>
+                    <button onClick={() => navigate(`/delete/${users.id}`)}>Delete</button></td> 
                 </tr>
 
             </tbody>
